@@ -1,0 +1,5 @@
+[mysqld]
+default-authentication-plugin=caching_sha2_password
+
+#Listen on all interfaces
+bind-address=0.0.0.0

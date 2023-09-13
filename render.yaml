@@ -1,0 +1,18 @@
+service:
+  - type: pserv
+    name: mysql
+    runtime: docker
+    plan: standard
+    disk:
+      name: mysql
+      mountPath: /var/lib/mysql
+      sizeGB: 20
+    envVars:
+      - key: MYSQL_DATABASE
+        sync: false
+      - key: MYSQL_USER
+        sync: false
+      - key: MYSQL_PASSWORD
+        sync: false
+      - key: MYSQL_ROOT_PASSWORD
+        sync: false
